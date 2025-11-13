@@ -1,0 +1,22 @@
+# A good starting point
+
+# CRITICAL: Ignore environment files with secret keys
+.env
+
+# Dependency directories
+node_modules/
+
+# Build or distribution folders
+build/
+dist/
+
+# Log files
+*.log
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+
+# IDE configuration folders
+.vscode/
+.idea/
