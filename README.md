@@ -299,7 +299,7 @@ Bull provides built-in retry logic, job prioritization, delayed jobs, and excell
 
 ## Project Structure
 
-``
+```
 analytics-backend/
 ├── src/
 │ ├── server.js # Main API server
@@ -317,7 +317,7 @@ analytics-backend/
 ├── README.md
 └── test-api.sh # API test suite
 
-``
+```
 
 ## Performance Benchmarks
 
