@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import { connectDB } from './config/database.js';
 import ingestionRouter from './routes/ingestion.js';
+import reportingRouter from './routes/reporting.js';
 
 dotenv.config();
 
@@ -16,8 +17,9 @@ app.get('/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-// Event ingestion routes
+//  routes
 app.use('/', ingestionRouter);
+app.use('/', reportingRouter);
 
 // Start server
 const startServer = async () => {
